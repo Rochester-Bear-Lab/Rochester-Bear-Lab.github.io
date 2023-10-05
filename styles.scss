@@ -1,0 +1,262 @@
+---
+---
+
+@charset "utf-8";
+
+@import "tachyons-sass/tachyons.scss";
+
+html,
+button,
+input,
+select,
+textarea {
+  font-family: 'Roboto', sans-serif;
+  // font-family: 'Roboto Slab', serif;
+}
+
+@media only screen and (min-width: 768px) {
+  html,
+  button,
+  input,
+  select,
+  textarea {
+    font-family: "Roboto", sans-serif;
+  // font-family: 'Roboto Slab', serif;
+  }
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-size: 16px;
+  margin: 0;
+  height: 100%;
+  position: relative;
+}
+
+:root {
+  --cmu-red: rgb(255, 209, 0);
+  --cmu-gray: #e0e0e0;
+  --cmu-dark-gray: rgb(0, 59, 113);
+  --ur-yellow: rgb(255, 209, 0);
+  --ur-blue: rgb(0, 59, 113);
+
+  --cmu-gold: #a60;
+  --cmu-teal: #067;
+  --cmu-blue: #247;
+  --cmu-green: #085;
+  --cmu-dark-green: #243;
+
+  --pink: #faa;
+
+  --text-color: #000;
+
+}
+
+.f2,
+.f3,
+.nowrap
+.cta
+.link {
+  font-family: 'Roboto Slab', serif;
+  color: black;
+}
+
+.underline-dot{
+  border-bottom: 1px dotted #333333;
+}
+
+.underline-dot-white{
+  border-bottom: 1px dotted #ffffff;
+}
+
+
+.ap-lab-black {
+  color: black;
+}
+
+.cmu-red {
+  color: var(--cmu-red);
+}
+.cmu-dark-gray {
+  color: var(--cmu-dark-gray);
+}
+
+.ur-blue{
+  color: var(--ur-blue);
+}
+
+.cmu-gray {
+  color: var(--cmu-gray);
+}
+.hover-cmu-red:hover {
+  color: var(--cmu-red);
+}
+
+.hover-ur-yellow:hover {
+  color: var(--ur-yellow);
+}
+
+.bg-cmu-dark-gray {
+  background-color: var(--cmu-dark-gray);
+}
+.bg-cmu-gray {
+  background-color: var(--cmu-gray);
+}
+
+.b--cmu-red {
+  border-color: var(--cmu-red);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @extend .ap-lab-black, .mt4, .mb3, .lh-title;
+}
+
+.cta {
+  // color: var(--cmu-dark-gray);
+
+  @extend .ttu, .no-underline, .b;
+
+  // font-size: 0.9em;
+  margin-right: 0.15em;
+
+  &:after {
+    content: " \25BA";
+    display: inline;
+    position: relative;
+    font-size: 75%;
+    top: -1px;
+    margin-left: 0.15em;
+  }
+}
+
+.mw-max-width {
+  max-width: 76rem;
+}
+
+main {
+  a {
+    color: var(--cmu-red);
+    text-decoration-color: var(--pink);
+    @extend .link;
+
+    &:hover,
+    &:focus {
+      @extend .dim;
+    }
+  }
+}
+
+button {
+  border-bottom: 2px solid var(--cmu-dark-gray);
+  background-color: 2px solid var(--cmu-gray);
+  padding: 0.2rem 0.6rem;
+}
+
+.jumbotron {
+  // background-color: var(--cmu-blue);
+  border-width: .1em;
+  border-color: black;
+  border-style: solid;
+  // border: var(b--black);
+
+  // @extend .white;
+
+  // h1 {
+  //   @extend .white;
+  // }
+
+  // .cta,
+  // a {
+  //   color: white;
+  // }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.logo {
+  height: 1.2em;
+  margin-bottom: -.3rem;
+}
+
+.thumb-video{
+  border-width: 0;
+  border-style: none;
+}
+
+.min-width-front
+{
+  min-width: 10rem;
+}
+
+.preview-image {
+  width: 25em;
+  height: 15rem;
+  background-size: cover;
+  background-position: top left;
+  transition: background 1.5s;
+  border-width: 0;
+  border-style: none;
+
+  // &:hover {
+  //   background-position: bottom right;
+  // }
+}
+
+i.fa.fa-external-link
+{
+  font-size: x-small;
+  vertical-align: top;
+  // padding-left: 2px;
+}
+
+.headermenu{
+  background-color: white;
+  // width: 100%;
+}
+
+footer {
+  // background-image: url(assets/bg-seal.png);
+  background-repeat: no-repeat;
+  background-position-x: 10px;
+  background-position-y: 10px;
+  background-size: 500px;
+  background-color: black;  
+  font-size: 0.8em;
+}
+
+#content br {display: none;}
+#content p br {display: inline;}
+
+// From https://codepen.io/Anotherdago/pen/yjVxOB
+/*Hide info of no checked inputs*/
+.accordion__item input:not(:checked) ~ .accordion__content {
+  display: none;
+}
+
+// From https://www.tutorialspoint.com/How-do-I-wrap-text-in-a-pre-tag-in-HTML
+// Wrap text for bibtex entries 
+pre {
+  overflow-x: auto;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}

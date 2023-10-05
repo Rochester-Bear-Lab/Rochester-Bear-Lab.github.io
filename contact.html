@@ -1,0 +1,79 @@
+---
+layout: page
+title: Contact
+subtitle: Contact BEAR Lab at University of Rochester.
+---
+
+<script
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-0IJG1xqbMgNUgzI_GHB_zY0lFhmMtHI&callback=initMap&libraries=&v=weekly"
+defer
+></script>
+<style type="text/css">
+/* Set the size of the div element that contains the map */
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
+</style>
+<script>
+  // Initialize and add the map
+  function initMap() {
+    // The location of HCII 40.443316, -79.945889
+    const cmu_hcii = { lat: 43.1306, lng: -77.6260 };
+    // The map, centered at HCII
+    const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 15,
+      center: cmu_hcii,
+    });
+    // The marker, positioned at HCII
+    const marker = new google.maps.Marker({
+      position: cmu_hcii,
+      map: map,
+    });
+  }
+</script>
+
+<h2 class="f3 ur-blue">Reach out</h2>
+
+<p class="f5 lh-copy">
+  You can reach Prof. Yukang Yan at <a href="mailto:yyan37@cs.rochester.edu" class="underline-dot black link hover-cmu-red">yyan37@cs.rochester.edu</a>.
+
+</p>
+
+<h2 class="f3 ur-blue">Where to find us.</h2>
+
+<!-- <p class="measure-wide lh-copy">
+</p> -->
+<p>
+<strong>Office Prof. Yan:</strong> Wegmans Hall, Room 2505<br/>
+</p>
+
+
+<p>
+  <a href="{{ '/index' | relative_url }}" class="link black hover-cmu-red dim pv1 dib underline-dot">BEAR Lab</a>,
+  <a href="https://www.cs.rochester.edu" class="link black hover-cmu-red dim pv1 dib underline-dot">Department of Computer Science</a>,
+  <a href="https://www.rochester.edu" class="link black hover-cmu-red dim pv1 dib underline-dot">University of Rochester</a>
+  <br/>
+  <a href="https://www.google.com/maps/place/Newell-Simon+Hall/@40.443428,-79.9456134,15z/data=!4m2!3m1!1s0x0:0x9dc3e7773e241828?sa=X&ved=2ahUKEwiSiovV5IHtAhWRzaQKHYMqAd0Q_BIwCnoECBIQBQ"
+  class="link black hover-cmu-red dim pv1 dib underline-dot">
+  Wegmans Hall, 250 Hutchison Rd, Rochester, NY 14620 United States</a>
+</p>
+<!-- <i class="fa fa-external-link"></i> -->
+
+<div id="map" ></div>
+
+<!-- <h2 class="f3">Office</h2> -->
+
+<!-- <p class="measure-wide lh-copy">
+  Here is a description of David's office, and maybe office hours.
+</p>
+
+<h2 class="f3">Lab space</h2>
+
+<p class="measure-wide lh-copy">
+  Here is a description of the lab space, maybe with some images.
+</p> -->
+
+<!-- ######################################################## -->

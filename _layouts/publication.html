@@ -1,0 +1,169 @@
+---
+layout: default
+---
+
+<section>
+  <div class="pv4 bg-white">
+    <div class="w-100 mw8 ph4-l ph3 pv2-l pv3 center">
+      <h1 class="f2 lh-title measure mt3">
+        {{ page.title }}
+      </h1>
+
+      {% if page.description %}
+        <p class="lh-copy mt1 f4">
+          {{ page.description | markdownify | remove: '<p>' | remove: '</p>' }}
+        </p>
+      {% endif %}
+
+      <div class="mb2">
+        {% for author in page.authors %}
+          {% include person name=author %}{% unless forloop.last %},{% endunless %}{% endfor %}.
+        <!-- {% for author in pub.authors %}
+          {% include person name=author %}{% unless forloop.last %}, {% endunless %}{% endfor %}. -->
+        </div>
+
+      <!-- <div class="flex flex-row flex-wrap items-start mt1">
+      {% for name in page.authors limit:1%} {% assign author = site.people |
+      where:"name", name | first %}
+        <div class="flex flex-column items-center mt3 mr4">
+          <picture>
+            <source srcset="{{ author.image | relative_url }}"></source>
+            <source srcset="{{ 'assets/person.png' | relative_url }}"></source>
+            <img class="br-100 w3 h3 mb1" alt="Picture of {{ name }}" />
+          </picture>
+          <div class="black mw4 tc">{% include person name=name %}</div>
+        </div>
+      {% endfor %}
+      </div> -->
+
+      {% if page.venue %}
+        <div class="mt3">
+          Published at
+          <span class="b">
+            {% if page.venue_url %}
+              <a href="{{ page.venue_url }}" class="black underline-dot hover-cmu-red link">
+            {% endif %}
+            {{ page.venue }}
+            {{ page.year }}
+            {% if page.venue_url %}</a>{% endif %}
+          </span>
+        </div>
+      {% endif %}
+
+      {% if page.awards %}
+        <ul class="list pl0">
+          {% for award in page.awards %}
+          <li class="mt1 {% if award == "Best Paper Award" %}gold{% else %}cmu-red{% endif %}">
+              <i class="fas fa-{% if award == "Best Paper Award" %}trophy{% else %}award{% endif %}"></i> {{ award }}
+          </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="w-100 mw8 ph4-l ph3 center mt1">
+    {% assign filename = 'assets' | append: page.url | replace: '.html', '.png' %}
+    <img src="{{ filename | relative_url }}" alt="Teaser image" class="mw-100" style="max-height: 600px">
+
+    {% if page.tweet %}
+      <p class="measure-wide">
+        <a href="https://twitter.com/intent/tweet?text={{ page.tweet }}&url={{ site.production_url }}/pagelications/%23{{ anchor }}&via=cmudig&related=cmudig" class="cmu-dark-gray">
+          <i class="fab fa-twitter"></i> <span class="i">{{ page.tweet }}</span>
+        </a>
+      </p>
+    {% endif %}
+
+    {% assign page_content = content %}
+    {% if page_content != "" %}
+      <h2>Abstract</h2>
+      <div class="lh-copy">
+        {{ page_content }}
+      </div>
+    {% endif %}
+
+    <!-- width="400" height="240" class="thumb-video"  -->
+    {% if page.video-30sec %}
+    <iframe width="600" height="360" class="thumb-video mt3 mb2"
+            src="https://www.youtube.com/embed/{{ page.video-30sec}}?iv_load_policy=3&modestbranding=1&rel=0&autohide=1&playsinline=1&controls=1&showinfo=0&autoplay=0&loop=0&mute=1" 
+            frameborder="0" allowfullscreen>
+    </iframe>   
+
+    <!-- <li class="mt2"><a href="https://www.youtube.com/watch?v={{ page.video-30sec }}" class="black link hover-cmu-red underline-dot ">
+      Video: 30sec teaser
+    </a></li> -->
+    {% endif %}
+
+    {% if page.link or page.pdf or page.video or page.blog or page.slides or page.doi %}
+    <h2>Materials</h2>
+      <ul class="list pl0">
+        {% if page.pdf %}
+          <li class="mt2"><a href="{{ page.pdf }}" class="black link hover-cmu-red underline-dot ">
+            PDF
+          </a></li>
+        {% endif %}
+
+        {% if page.blog %}
+          <li class="mt2"><a href="{{ page.blog }}" class="black link hover-cmu-red underline-dot ">
+            Blog
+          </a></li>
+        {% endif %}
+
+        {% if page.code %}
+          <li class="mt2"><a href="{{ page.code }}" class="black link hover-cmu-red underline-dot ">
+            Code
+          </a></li>
+        {% endif %}
+
+        {% if page.video-30sec %}
+          <li class="mt2"><a href="https://www.youtube.com/watch?v={{ page.video-30sec }}" class="black link hover-cmu-red underline-dot ">
+            Video: 30sec teaser
+          </a></li>
+        {% endif %}
+
+        {% if page.video-suppl %}
+          <li class="mt2"><a href="https://www.youtube.com/watch?v={{ page.video-suppl }}" class="black link hover-cmu-red underline-dot ">
+            Video: Full length video
+          </a></li>
+        {% endif %}
+
+        {% if page.video-talk-5min %}
+          <li class="mt2"><a href="https://www.youtube.com/watch?v={{ page.video-talk-5min }}" class="black link hover-cmu-red underline-dot ">
+            Video: Short presentation
+          </a></li>
+        {% endif %}
+
+        {% if page.video-talk-15min %}
+          <li class="mt2"><a href="https://www.youtube.com/watch?v={{ page.video-talk-15min }}" class="black link hover-cmu-red underline-dot ">
+            Video: Long presentation
+          </a></li>
+        {% endif %}
+
+        {% if page.slides %}
+          <li class="mt2"><a href="{{ page.slides }}" class="black link hover-cmu-red underline-dot ">
+            Slides
+          </a></li>
+        {% endif %}
+
+        {% if page.arxiv %}
+          <li class="mt2"><a href="https://arxiv.org/abs/{{ page.arxiv }}" class="black link hover-cmu-red underline-dot ">
+            arXiv: {{ page.arxiv }}
+          </a></li>
+        {% endif %}
+        {% if page.osf %}
+          <li class="mt2"><a href="https://osf.io/{{ page.osf }}" class="black link hover-cmu-red underline-dot ">
+            OSF: {{ page.osf }}
+          </a></li>
+        {% endif %}
+      </ul>
+    {% endif %}
+
+    {% if page.bibtex != "" %}
+      <h2>Bibtex</h2>
+      <div class="f6 underline-dot">
+        <pre>{{ page.bibtex}}</pre>
+      </div>
+    {% endif %}
+    
+  </div>
+</section>

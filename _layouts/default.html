@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    <div class="content">
+      <header class="bg-white">
+        <div
+          class="w-100 mw8 ph4-l ph3 center pt2 pb4-l pb3 flex items-baseline flex flex-column flex-row-l"
+        >
+        <!-- <div class="headermenu w-100 mw8 ph4-l ph3 right pt2 pb4-l pb3 flex items-baseline flex flex-column flex-row-l"> -->
+        <!-- <div class="headermenu w-100 mw8 pa2 flex flex-column">           -->
+          <a href="/" class="dib f2 mt4 fw6 link cmu-dark-gray hover-cmu-red">
+          <!-- <a href="/" class="dib f2 mt2 fw6 link black absolute right-0 hover-cmu-red w-55 pa3 mr2"> -->
+            <!-- <picture> -->
+              <!-- <source  
+                srcset="{{ '/assets/logo-sphere-01-01-01.svg' | relative_url }}"
+                type="image/svg+xml"              
+              /> -->
+              <!-- <source
+                srcset="{{ '/assets/logo-light.webp' | relative_url }}"
+                type="image/webp"
+              /> -->
+              <!-- <source  
+                srcset="{{ '/assets/logo-sphere-03-01.png' | relative_url }}"
+                type="image/png"
+              />
+              <img 
+                class="logo"
+                alt="A coarsely tesselated sphere colored in shades of gray."
+                class="pl2 w3"
+              /> -->              
+            <!-- </picture> -->
+              BEAR Lab
+          </a>
+          <!--  --><nav
+            class="mt3 ml-auto-ns lh-copy w-auto-ns w-100 flex flex-column flex-row-ns f4 f5-ns"
+            >
+            <!-- <nav class="mt2 lh-copy w-100 w-25 pa3 mr2"></nav> -->
+            <div class="tc mt0-ns mt2">
+              <a
+                class="ml4-l ml3-m pa0-ns ph2 pv1 b ur-blue hover-cmu-red link dib {%if page.url == '/' %}cmu-red{% endif %} "
+                href="{{ '/index' | relative_url }}"
+                >Home</a
+              >
+              <a
+                class="ml4-l ml3-m pa0-ns ph2 pv1 b ur-blue hover-cmu-red link dib {%if page.url == '/team.html' %}cmu-red{% endif %} "
+                href= "{{ '/team' | relative_url }}"
+                >Team</a
+              >
+              <a
+                class="ml4-l ml3-m pa0-ns ph2 pv1 b ur-blue hover-cmu-red link dib {%if page.url == '/publications.html' %}cmu-red{% endif %} "
+                href="{{ '/publications' | relative_url }}"
+                >Publications</a
+              >
+              <!-- <a
+                class="ml4-l ml3-m pa0-ns ph2 pv1 b black hover-cmu-red link dib {%if page.url == '/teaching.html' %}cmu-red{% endif %} "
+                href="{{ '/teaching' | relative_url }}"
+                >Teaching</a
+              > -->
+              <a
+                class="ml4-l ml3-m pa0-ns ph2 pv1 b ur-blue hover-cmu-red link dib {%if page.url == '/contact.html' %}cmu-red{% endif %} "
+                href="{{ '/contact' | relative_url }}"
+                >Contact</a
+              >
+            </div>
+          </nav>
+        </div>
+
+      </header>
+
+      <main>
+        {{ content }}
+      </main>
+    </div>
+
+    <footer class="bt white mt5 flex-shrink-0">
+      <div class="w-100 mw8 ph4-l ph3 center pv3 footerinfo">
+        <ul class="list pl0">
+          <li>
+            <a href="{{ '/index' | relative_url }}" class="link white dib underline-dot-white hover-cmu-red mv1">BEAR Lab</a>, 
+            <a href="https://www.cs.rochester.edu" class="link white dib underline-dot-white hover-cmu-red mv1">Department of Computer Science</a>,
+            <a href="https://rochester.edu/" class="link white dib underline-dot-white hover-cmu-red mv1">University of Rochester</a>
+            <!-- <span ></span>  -->
+          </li>
+          <li>
+            <span>
+            Wegmans Hall, 250 Hutchison Rd, Rochester, NY 14620 United States, <a href="{{ '/contact' | relative_url }}" class="link white dim underline-dot-white hover-cmu-red">How to find us.</a>
+            </span>
+          </li>
+          <li class="pv1">
+            <abbr
+            title="Last build on {{ site.time | date: '%Y-%m-%d' }}"
+            class="white"
+            style="list-style: height 2em; text-decoration: none;"
+            >Last update {{ site.time | date: "%B %Y" }}</abbr>              
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
