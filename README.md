@@ -1,8 +1,8 @@
-# Website for the Augmented Perception Lab at CMU HCII
+# Website for the BEAR Lab at URCS
 
-Deployed at https://augmented-perception.org/.
+Deployed at https://rochester-bear-lab.github.io/.
 
-Based on the website of the CMU Data Interaction Group (https://dig.cmu.edu/), which is open source on Github (https://github.com/cmudig).
+Based on the website of the CMU Data Interaction Group (https://augmented-perception.org/), which is open source on Github (https://github.com/Augmented-Perception-Lab).
 
 ## Usage
 
