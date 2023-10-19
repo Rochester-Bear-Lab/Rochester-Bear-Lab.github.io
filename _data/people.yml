@@ -4,6 +4,12 @@
   role: Assistant Professor
   email: yyan37@cs.rochester.edu
 
+- name: Zhipeng Li
+  website: https://www.zhipeng-li.com/
+  image: /assets/people/zhipeng.png
+  role: Ph.D. collaborator (Tsinghua University)
+  email: lizhipeng0603@gmail.com
+
 - name: Bear
   website: https://rochester-bear-lab.github.io/team
   image: /assets/people/Bear.jpg
