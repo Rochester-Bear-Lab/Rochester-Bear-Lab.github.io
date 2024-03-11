@@ -46,6 +46,24 @@
 
     gtag('config', 'G-MSRQ58DGER');
   </script>
+  <style>
+  .container {
+    display: flex; /* Enables flexbox */
+    align-items: center; /* Aligns items vertically in the center */
+    gap: 20px; /* Adds some space between the image and the text */
+  }
+  .text {
+    flex-grow: 1; /* Allows the text to fill up the remaining space */
+  }
+  .image {
+    /* Adjust the width as needed */
+    flex-shrink: 0; /* Prevents the image from shrinking */
+  }
+  img {
+    width: 100%; /* Makes the image fill its container */
+    height: auto; /* Keeps the image's aspect ratio */
+  }
+  </style>
 </head>
 
 
