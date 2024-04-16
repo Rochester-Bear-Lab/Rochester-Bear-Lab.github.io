@@ -18,13 +18,13 @@
 
 - name: Stephanie Kim
   website: /team
-  image: /assets/people/person.jpg
+  image: /assets/people/person.png
   role: Undergraduate student
   email: skim296@u.rochester.edu
 
 - name: Yufei Li
   website: /team
-  image: /assets/people/person.jpg
+  image: /assets/people/person.png
   role: Undergraduate student
   email: yli294@u.rochester.edu
 
@@ -48,7 +48,7 @@
 
 - name: Yutong (Tony) Ren	
   website: https://renyutong360.wixsite.com/yutong-ren
-  image: /assets/people/yutong.ipg
+  image: /assets/people/yutong.jpg
   role: Collaborator
   email: rentony@umich.edu
 
