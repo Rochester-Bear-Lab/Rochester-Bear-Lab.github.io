@@ -2,25 +2,61 @@
   website: /yukang
   image: /assets/people/yukang.png
   role: Assistant Professor
-  email: yyan37@cs.rochester.edu
+  email: yukang.yan@rochester.edu
+
+- name: Tianyu Zhang
+  website: https://tianyuzhang2001.com/
+  image: /assets/people/tianyu.jpg
+  role: PhD student
+  email: tianyutheodosia.zhang@mail.utoronto.ca
+
+- name: Keer Song
+  website: 
+  image: /assets/people/person.jpg
+  role: Master student
+  email: ksong13@ur.rochester.edu
+
+- name: Stephanie Kim
+  website: 
+  image: /assets/people/person.jpg
+  role: Undergraduate student
+  email: skim296@u.rochester.edu
+
+- name: Yufei Li
+  website: 
+  image: /assets/people/person.jpg
+  role: Undergraduate student
+  email: yli294@u.rochester.edu
+
+- name: Siddharth Narsipur
+  website: https://sidnarsipur.github.io/
+  image: /assets/people/siddhard.HEIC
+  role: Undergraduate student
+  email: yli294@u.rochester.edu
 
 - name: Zhipeng Li
   website: https://www.zhipeng-li.com/
   image: /assets/people/zhipeng.png
-  role: Research Intern
+  role: Collaborator
   email: lizhipeng0603@gmail.com
-
-- name: Yishu Ji
-  website: https://yishu-ji.github.io/
-  image: /assets/people/yishu.jpg
-  role: Research Intern
-  email: jiys19@mails.tsinghua.edu.cn
 
 - name: Jianing Yin
   website: https://www.jianingyin.com/
   image: /assets/people/person.png
-  role: Research Intern
+  role: Collaborator
   email: catherineyin13@gmail.com
+
+- name: Yutong (Tony) Ren	
+  website: https://renyutong360.wixsite.com/yutong-ren
+  image: /assets/people/yutong.ipg
+  role: Collaborator
+  email: rentony@umich.edu
+
+- name: Sheng Zhao	
+  website: https://zhaosheng-thu.github.io
+  image: /assets/people/sheng.png
+  role: Collaborator
+  email: alexzhao0705@gmail.com
 
 - name: Bear
   website: https://rochester-bear-lab.github.io/team
