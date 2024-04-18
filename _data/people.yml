@@ -58,6 +58,12 @@
   role: Collaborator
   email: alexzhao0705@gmail.com
 
+- name: Xiaowen Yuan	
+  website: https://www.xiaowenyuan.design/
+  image: /assets/people/xiaowen.jpeg
+  role: Collaborator
+  email: xiaowen_yuan@berkeley.edu
+
 - name: Bear
   website: https://rochester-bear-lab.github.io/team
   image: /assets/people/Bear.jpg
