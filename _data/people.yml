@@ -64,6 +64,12 @@
   role: Collaborator
   email: xiaowen_yuan@berkeley.edu
 
+- name: Shuchang Xu	
+  website: https://shuchangxu.github.io/
+  image: /assets/people/shuchang.png
+  role: Collaborator
+  email: csescxu@ust.hk
+
 - name: Bear
   website: https://rochester-bear-lab.github.io/team
   image: /assets/people/Bear.jpg
