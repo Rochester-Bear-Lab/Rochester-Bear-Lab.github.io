@@ -16,12 +16,6 @@
   role: Master's student
   email: ksong13@ur.rochester.edu
 
-- name: Stephanie Kim
-  website: /team
-  image: /assets/people/steph.png
-  role: Undergraduate student
-  email: skim296@u.rochester.edu
-
 - name: Yufei Li
   website: /team
   image: /assets/people/person.png
@@ -34,12 +28,6 @@
   role: Undergraduate student
   email: snarsipu@u.rochester.edu
 
-- name: Zhipeng Li
-  website: https://www.zhipeng-li.com/
-  image: /assets/people/zhipeng.png
-  role: Collaborator
-  email: lizhipeng0603@gmail.com
-
 - name: Jianing Yin
   website: https://www.jianingyin.com/
   image: /assets/people/jianing.jpg
@@ -49,7 +37,7 @@
 - name: Yutong (Tony) Ren	
   website: https://renyutong360.wixsite.com/yutong-ren
   image: /assets/people/yutong.jpg
-  role: Collaborator
+  role: Visisting Student
   email: rentony@umich.edu
 
 - name: Sheng Zhao	
