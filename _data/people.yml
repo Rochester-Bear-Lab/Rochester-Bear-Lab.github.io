@@ -10,12 +10,6 @@
   role: PhD student
   email: tianyu.zhang@rochester.edu
 
-- name: Sunniva Liu
-  website: https://www.sunnivaliu.com/
-  image: /assets/people/sunniva.jpg
-  role: Visiting student
-  email: sunnivafliu@gmail.com
-
 - name: Yufei Li
   website: /team
   image: /assets/people/person.png
@@ -28,24 +22,11 @@
   role: Undergraduate student
   email: snarsipu@u.rochester.edu
 
-
-- name: Yutong (Tony) Ren	
-  website: https://renyutong360.wixsite.com/yutong-ren
-  image: /assets/people/yutong.jpg
-  role: Visiting student
-  email: rentony@umich.edu
-
 - name: Sheng Zhao	
   website: https://zhaosheng-thu.github.io
   image: /assets/people/sheng.png
-  role: Collaborator
+  role: Undergraduate student
   email: alexzhao0705@gmail.com
-
-- name: Xiaowen Yuan	
-  website: https://www.xiaowenyuan.design/
-  image: /assets/people/xiaowen.jpeg
-  role: Collaborator
-  email: xiaowen_yuan@berkeley.edu
 
 - name: Shuchang Xu	
   website: https://shuchangxu.github.io/
