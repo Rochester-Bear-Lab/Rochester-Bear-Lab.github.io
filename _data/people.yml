@@ -34,6 +34,12 @@
   role: Collaborator
   email: csescxu@ust.hk
 
+- name: Xinyi Jia	
+  website: /team
+  image: /assets/people/xinyi.png
+  role: Collaborator
+  email: xini.jia@outlook.com
+
 - name: Bear
   website: https://rochester-bear-lab.github.io/team
   image: /assets/people/Bear.jpg
