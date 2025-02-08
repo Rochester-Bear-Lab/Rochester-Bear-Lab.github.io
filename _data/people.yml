@@ -16,12 +16,6 @@
   role: Visiting student
   email: ylu105@ur.rochester.edu
 
-- name: Yufei Li
-  website: /team
-  image: /assets/people/person.png
-  role: Undergraduate student
-  email: yli294@u.rochester.edu
-
 - name: Siddharth Narsipur
   website: https://sidnarsipur.github.io/
   image: /assets/people/siddharth.png
@@ -39,12 +33,6 @@
   image: /assets/people/shuchang.png
   role: Collaborator
   email: csescxu@ust.hk
-
-- name: Xinyi Jia	
-  website: /team
-  image: /assets/people/Xinyi.png
-  role: Collaborator
-  email: xini.jia@outlook.com
 
 - name: Bear
   website: https://rochester-bear-lab.github.io/team
