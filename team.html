@@ -60,7 +60,6 @@ roles:
 
 <ul class="list pl0">
   {% assign sorted_alumni = site.data.alumni | sort: 'alumni_since' | reverse %} {%
-  assign sorted_alumni = sorted_alumni | sort: 'name' %} {%
   for person in sorted_alumni %} {% if person.alumni_since %}
   <li>
     {% if person.note != blank %}
