@@ -34,6 +34,12 @@
   role: Undergraduate student
   email: jtang41@u.rochester.edu
 
+- name: Eric Yang
+  website: https://eric-yyyyy.github.io/
+  image: /assets/people/eric.png
+  role: Undergraduate student
+  email: jyang118@u.rochester.edu
+
 - name: Sheng Zhao	
   website: https://zhaosheng-thu.github.io
   image: /assets/people/sheng.png
