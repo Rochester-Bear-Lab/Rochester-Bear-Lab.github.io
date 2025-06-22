@@ -22,12 +22,6 @@
   role: Visiting student
   email: ylu105@ur.rochester.edu
 
-- name: Siddharth Narsipur
-  website: https://sidnarsipur.github.io/
-  image: /assets/people/siddharth.png
-  role: Undergraduate student
-  email: snarsipu@u.rochester.edu
-
 - name: Jiamu Tang
   website: https://206364.cargo.site/
   image: /assets/people/jiamu.jpg
@@ -40,13 +34,7 @@
   role: Undergraduate student
   email: jyang118@u.rochester.edu
 
-- name: Sheng Zhao	
-  website: https://zhaosheng-thu.github.io
-  image: /assets/people/sheng.png
-  role: Undergraduate student
-  email: alexzhao0705@gmail.com
-
-- name: Shuchang Xu	
+- name: Shuchang Xu
   website: https://shuchangxu.github.io/
   image: /assets/people/shuchang.png
   role: Collaborator
