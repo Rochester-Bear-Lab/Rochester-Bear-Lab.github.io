@@ -22,6 +22,24 @@
   role: Visiting student
   email: ylu105@ur.rochester.edu
 
+- name: Linh Tran
+  website: https://lnhtrn.github.io/
+  image: /assets/people/linh.png
+  role: Master's student
+  email: ltran18@ur.rochester.edu
+
+- name: Luke Liu
+  website: https://lukeliu56809.github.io/portfolio/
+  image: /assets/people/luke.png
+  role: Master's student
+  email: lukeliu56809@gmail.com
+
+- name: Tasin Khan
+  website: https://tasiinn.github.io/
+  image: /assets/people/tasin.jpg
+  role: Master's student
+  email: tkhan17@ur.rochester.edu
+
 - name: Eric Yang
   website: https://eric-yyyyy.github.io/
   image: /assets/people/eric.png
@@ -33,6 +51,12 @@
   image: /assets/people/jiamu.jpg
   role: Undergraduate student
   email: jtang41@u.rochester.edu
+
+- name: Sophia Yang
+  website: https://sophiay06.github.io/
+  image: /assets/people/sophia.png
+  role: Undergraduate student
+  email: cyang68@u.rochester.edu
 
 - name: Shuchang Xu
   website: https://shuchangxu.github.io/
