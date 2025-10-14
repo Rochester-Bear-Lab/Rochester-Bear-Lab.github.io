@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="application-name" content="URCS BEAR Lab" />
+  <meta name="theme-color" content="#b00" />
+  
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
+    rel="stylesheet"
+  />
+  
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+
+  <link
+    href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    rel="stylesheet"
+  />
+  <link href="/styles.css" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="shortcut icon" href="/logo.png" />
+  <link
+    rel="icon"
+    type="image/png"
+    href="/assets/logo.png"
+    sizes="250x250"
+  />
+
+  <link
+    rel="alternate"
+    type="application/rss+xml"
+    title="URCS BEAR Lab"
+    href="http://localhost:4000/feed.xml"
+  />
+
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Enabling Voice-Accompanying Hand-to-Face Gesture Recognition with Cross-Device Sensing | URCS BEAR Lab</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Enabling Voice-Accompanying Hand-to-Face Gesture Recognition with Cross-Device Sensing" />
+<meta name="author" content="Zisu Li" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Gestures performed accompanying the voice are essential for voice interaction to convey complementary semantics for interaction purposes such as wake-up state and input modality. In this paper, we investigated voice-accompanying hand-to-face (VAHF) gestures for voice interaction. We targeted on hand-to-face gestures because such gestures relate closely to speech and yield significant acoustic features (e.g., impeding voice propagation). We conducted a user study to explore the design space of VAHF gestures, where we first gathered candidate gestures and then applied a structural analysis to them in different dimensions (e.g., contact position and type), outputting a total of 8 VAHF gestures with good usability and least confusion. To facilitate VAHF gesture recognition, we proposed a novel cross-device sensing method that leverages heterogeneous channels (vocal, ultrasound, and IMU) of data from commodity devices (earbuds, watches, and rings). Our recognition model achieved an accuracy of 97.3\% for recognizing 3 gestures and 91.5\% for recognizing 8 gestures (excluding the “empty” gesture), proving the high applicability. Quantitative analysis also shed light on the recognition capability of each sensor channel and their different combinations. In the end, we illustrated the feasible use cases and their design principles to demonstrate the applicability of our system in various scenarios." />
+<meta property="og:description" content="Gestures performed accompanying the voice are essential for voice interaction to convey complementary semantics for interaction purposes such as wake-up state and input modality. In this paper, we investigated voice-accompanying hand-to-face (VAHF) gestures for voice interaction. We targeted on hand-to-face gestures because such gestures relate closely to speech and yield significant acoustic features (e.g., impeding voice propagation). We conducted a user study to explore the design space of VAHF gestures, where we first gathered candidate gestures and then applied a structural analysis to them in different dimensions (e.g., contact position and type), outputting a total of 8 VAHF gestures with good usability and least confusion. To facilitate VAHF gesture recognition, we proposed a novel cross-device sensing method that leverages heterogeneous channels (vocal, ultrasound, and IMU) of data from commodity devices (earbuds, watches, and rings). Our recognition model achieved an accuracy of 97.3\% for recognizing 3 gestures and 91.5\% for recognizing 8 gestures (excluding the “empty” gesture), proving the high applicability. Quantitative analysis also shed light on the recognition capability of each sensor channel and their different combinations. In the end, we illustrated the feasible use cases and their design principles to demonstrate the applicability of our system in various scenarios." />
+<link rel="canonical" href="http://localhost:4000/publications/2023-handtoface.html" />
+<meta property="og:url" content="http://localhost:4000/publications/2023-handtoface.html" />
+<meta property="og:site_name" content="URCS BEAR Lab" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-10-19T20:24:02-04:00" />
+<script type="application/ld+json">
+{"headline":"Enabling Voice-Accompanying Hand-to-Face Gesture Recognition with Cross-Device Sensing","dateModified":"2023-10-19T20:24:02-04:00","datePublished":"2023-10-19T20:24:02-04:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/publications/2023-handtoface.html"},"url":"http://localhost:4000/publications/2023-handtoface.html","author":{"@type":"Person","name":"Zisu Li"},"description":"Gestures performed accompanying the voice are essential for voice interaction to convey complementary semantics for interaction purposes such as wake-up state and input modality. In this paper, we investigated voice-accompanying hand-to-face (VAHF) gestures for voice interaction. We targeted on hand-to-face gestures because such gestures relate closely to speech and yield significant acoustic features (e.g., impeding voice propagation). We conducted a user study to explore the design space of VAHF gestures, where we first gathered candidate gestures and then applied a structural analysis to them in different dimensions (e.g., contact position and type), outputting a total of 8 VAHF gestures with good usability and least confusion. To facilitate VAHF gesture recognition, we proposed a novel cross-device sensing method that leverages heterogeneous channels (vocal, ultrasound, and IMU) of data from commodity devices (earbuds, watches, and rings). Our recognition model achieved an accuracy of 97.3\\% for recognizing 3 gestures and 91.5\\% for recognizing 8 gestures (excluding the “empty” gesture), proving the high applicability. Quantitative analysis also shed light on the recognition capability of each sensor channel and their different combinations. In the end, we illustrated the feasible use cases and their design principles to demonstrate the applicability of our system in various scenarios.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MSRQ58DGER"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-MSRQ58DGER');
+  </script>
+</head>
+
+
+
+  <body>
+    <div class="content">
+      <header class="bg-white">
+        <div class="w-100 mw8 ph4-l ph3 center pt2 pb4-l pb3 flex items-baseline flex flex-column flex-row-l">
+        <!-- <div class="headermenu w-100 mw8 ph4-l ph3 right pt2 pb4-l pb3 flex items-baseline flex flex-column flex-row-l"> -->
+        <!-- <div class="headermenu w-100 mw8 pa2 flex flex-column">           -->
+          <a href="/" class="dib f2 mt4 fw6 link cmu-dark-gray hover-cmu-red">
+          <!-- <a href="/" class="dib f2 mt2 fw6 link black absolute right-0 hover-cmu-red w-55 pa3 mr2"> -->
+            <!-- <picture> -->
+              <!-- <source  
+                srcset="/assets/logo-sphere-01-01-01.svg"
+                type="image/svg+xml"              
+              /> -->
+              <!-- <source
+                srcset="/assets/logo-light.webp"
+                type="image/webp"
+              /> -->
+              <!-- <source  
+                srcset="/assets/logo-sphere-03-01.png"
+                type="image/png"
+              />
+              <img 
+                class="logo"
+                alt="A coarsely tesselated sphere colored in shades of gray."
+                class="pl2 w3"
+              /> -->              
+            <!-- </picture> -->
+              BEAR Lab
+          </a>
+          <!--  --><nav class="mt3 ml-auto-ns lh-copy w-auto-ns w-100 flex flex-column flex-row-ns f4 f5-ns">
+            <!-- <nav class="mt2 lh-copy w-100 w-25 pa3 mr2"></nav> -->
+            <div class="tc mt0-ns mt2">
+              <a class="ml4-l ml3-m pa0-ns ph2 pv1 b ur-blue hover-cmu-red link dib  " href="/index">Home</a>
+              <a class="ml4-l ml3-m pa0-ns ph2 pv1 b ur-blue hover-cmu-red link dib  " href="/team">Team</a>
+              <a class="ml4-l ml3-m pa0-ns ph2 pv1 b ur-blue hover-cmu-red link dib  " href="/publications">Publications</a>
+              <!-- <a
+                class="ml4-l ml3-m pa0-ns ph2 pv1 b black hover-cmu-red link dib  "
+                href="/teaching"
+                >Teaching</a
+              > -->
+              <a class="ml4-l ml3-m pa0-ns ph2 pv1 b ur-blue hover-cmu-red link dib  " href="/contact">Contact</a>
+            </div>
+          </nav>
+        </div>
+
+      </header>
+
+      <main>
+        <section>
+  <div class="pv4 bg-white">
+    <div class="w-100 mw8 ph4-l ph3 pv2-l pv3 center">
+      <h1 class="f2 lh-title measure mt3">
+        Enabling Voice-Accompanying Hand-to-Face Gesture Recognition with Cross-Device Sensing
+      </h1>
+
+      
+
+      <div class="mb2">
+        
+          Zisu Li,
+          Chen Liang,
+          Yuntao Wang,
+          Yue Qin,
+          Chun Yu,
+          Yukang Yan,
+          Mingming Fan,
+          Yuanchun Shi.
+        <!-- . -->
+        </div>
+
+      <!-- <div class="flex flex-row flex-wrap items-start mt1">
+       
+        <div class="flex flex-column items-center mt3 mr4">
+          <picture>
+            <source srcset=""></source>
+            <source srcset="/assets/person.png"></source>
+            <img class="br-100 w3 h3 mb1" alt="Picture of Zisu Li" />
+          </picture>
+          <div class="black mw4 tc">Zisu Li</div>
+        </div>
+      
+      </div> -->
+
+      
+        <div class="mt3">
+          Published at
+          <span class="b">
+            
+              <a href="https://chi2023.acm.org/" class="black underline-dot hover-cmu-red link">
+            
+            ACM CHI
+            2023
+            </a>
+          </span>
+        </div>
+      
+
+      
+        <ul class="list pl0">
+          
+          <li class="mt1 cmu-red">
+              <i class="fas fa-award"></i> Best Paper Honorable Mention Award
+          </li>
+          
+        </ul>
+      
+    </div>
+  </div>
+
+  <div class="w-100 mw8 ph4-l ph3 center mt1">
+    
+    <img src="/assets/publications/2023-handtoface.png" alt="Teaser image" class="mw-100" style="max-height: 600px">
+
+    
+
+    
+    
+      <h2>Abstract</h2>
+      <div class="lh-copy">
+        Gestures performed accompanying the voice are essential for voice interaction to convey complementary semantics for interaction purposes such as wake-up state and input modality. In this paper, we investigated voice-accompanying hand-to-face (VAHF) gestures for voice interaction. We targeted on hand-to-face gestures because such gestures relate closely to speech and yield significant acoustic features (e.g., impeding voice propagation). We conducted a user study to explore the design space of VAHF gestures, where we first gathered candidate gestures and then applied a structural analysis to them in different dimensions (e.g., contact position and type), outputting a total of 8 VAHF gestures with good usability and least confusion. To facilitate VAHF gesture recognition, we proposed a novel cross-device sensing method that leverages heterogeneous channels (vocal, ultrasound, and IMU) of data from commodity devices (earbuds, watches, and rings). Our recognition model achieved an accuracy of 97.3\% for recognizing 3 gestures and 91.5\% for recognizing 8 gestures (excluding the "empty" gesture), proving the high applicability. Quantitative analysis also shed light on the recognition capability of each sensor channel and their different combinations. In the end, we illustrated the feasible use cases and their design principles to demonstrate the applicability of our system in various scenarios.
+
+
+      </div>
+    
+
+    <!-- width="400" height="240" class="thumb-video"  -->
+    
+
+    
+    <h2>Materials</h2>
+      <ul class="list pl0">
+        
+          <li class="mt2"><a href="https://dl.acm.org/doi/pdf/10.1145/3544548.3581008" class="black link hover-cmu-red underline-dot ">
+            PDF
+          </a></li>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+        
+      </ul>
+    
+
+    
+      <h2>Bibtex</h2>
+      <div class="f6 underline-dot">
+        <pre>@inproceedings{zisu2023, author = {Li, Zisu and Liang, Chen and Wang, Yuntao and Qin, Yue and Yu, Chun and Yan, Yukang and Fan, Mingming and Shi, Yuanchun}, title = {Enabling Voice-Accompanying Hand-to-Face Gesture Recognition with Cross-Device Sensing}, year = {2023}, isbn = {9781450394215}, publisher = {Association for Computing Machinery}, address = {New York, NY, USA}, url = {https://doi.org/10.1145/3544548.3581008}, doi = {10.1145/3544548.3581008}, abstract = {}, booktitle = {Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems}, articleno = {313}, numpages = {17}, keywords = {sensor fusion, acoustic sensing, hand gestures}, location = {Hamburg, Germany}, series = {CHI '23} }</pre>
+      </div>
+    
+    
+  </div>
+</section>
+
+      </main>
+    </div>
+
+    <footer class="bt white mt5 flex-shrink-0">
+      <div class="w-100 mw8 ph4-l ph3 center pv3 footerinfo">
+        <ul class="list pl0">
+          <li>
+            <a href="/index" class="link white dib underline-dot-white hover-cmu-red mv1">BEAR Lab</a>, 
+            <a href="https://www.cs.rochester.edu" class="link white dib underline-dot-white hover-cmu-red mv1">Department of Computer Science</a>,
+            <a href="https://rochester.edu/" class="link white dib underline-dot-white hover-cmu-red mv1">University of Rochester</a>
+            <!-- <span ></span>  -->
+          </li>
+          <li>
+            <span>
+            Wegmans Hall, 250 Hutchison Rd, Rochester, NY 14620 United States, <a href="/contact" class="link white dim underline-dot-white hover-cmu-red">How to find us.</a>
+            </span>
+          </li>
+          <li class="pv1">
+            <abbr title="Last build on 2023-10-19" class="white" style="list-style: height 2em; text-decoration: none;">Last update October 2023</abbr>              
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
