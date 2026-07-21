@@ -1,0 +1,68 @@
+HOW TO CHECK FOR NEW PUBLICATIONS
+==================================
+
+This script checks Semantic Scholar for new publications by Yukang Yan
+and creates draft files in _publications/ for any that are not yet on
+the website.
+
+
+FIRST-TIME SETUP
+----------------
+You only need to do this once.
+
+1. Make sure Python is installed (python.org).
+
+2. Open a terminal in the repo root and run:
+       pip install -r scripts/requirements.txt
+
+
+CHECKING FOR NEW PUBLICATIONS
+------------------------------
+Run this from the repo root whenever you want to sync:
+
+    python scripts/check_publications.py
+
+The script will:
+  - Scan existing _publications/ files to avoid duplicates
+  - Fetch all of Yukang Yan's papers from Semantic Scholar
+  - For each new paper, create a draft file in _publications/
+
+To preview what would be created without writing any files:
+
+    python scripts/check_publications.py --dry-run
+
+
+AFTER THE SCRIPT RUNS
+----------------------
+For each new file created (e.g. _publications/2025-papername.html):
+
+  1. Open the file and fill in the fields marked with # TODO:
+       - venue_url      (e.g. https://chi2025.acm.org/)
+       - venue_location (e.g. Yokohama, Japan)
+       - venue_tags     (verify the auto-inferred value, e.g. CHI, UIST)
+       - type           (verify Conference or Journal)
+       - tags           (add lab taxonomy tags, e.g. Augmented Reality, Sensing)
+       - pdf            (direct PDF link if available)
+
+  2. Add a thumbnail image:
+       assets/publications/SHORTNAME_thumb.png
+       (grab from the ACM DL page or the project website)
+
+  3. Set hidden: false  (and selected: true for featured papers)
+
+  4. Commit and push:
+       git add _publications/ assets/publications/
+       git commit -m "Add publication: <paper title>"
+       git push
+
+The site deploys automatically after every push to main.
+
+
+NOTES
+-----
+- New files are created with hidden: true so they won't appear on the
+  site until you set hidden: false.
+- The script will never overwrite existing files.
+- If a paper appears on Semantic Scholar before it is officially
+  published (e.g. as a preprint), the bibtex and month may be
+  incomplete. Update them once the paper is officially out.
