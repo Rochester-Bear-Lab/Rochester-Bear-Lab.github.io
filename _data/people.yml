@@ -16,18 +16,6 @@
   role: PhD student
   email: nandi.zhang@rochester.edu
 
-- name: Yang Lu
-  website: https://danahhhh.github.io/YangLu.github.io/
-  image: /assets/people/yang.jpg
-  role: Visiting student
-  email: ylu105@ur.rochester.edu
-
-- name: Linh Tran
-  website: https://lnhtrn.github.io/
-  image: /assets/people/linh.png
-  role: Master's student
-  email: ltran18@ur.rochester.edu
-
 - name: Luke Liu
   website: https://lukeliu56809.github.io/portfolio/
   image: /assets/people/luke.png
@@ -40,23 +28,17 @@
   role: Master's student
   email: tkhan17@ur.rochester.edu
 
-- name: Eric Yang
-  website: https://ericyang-portfolio.dev/
-  image: /assets/people/eric.png
-  role: Undergraduate student
-  email: jyang118@u.rochester.edu
-
-- name: Jiamu Tang
-  website: https://itschanism.github.io/
-  image: /assets/people/jiamu.jpg
-  role: Undergraduate student
-  email: jtang41@u.rochester.edu
-
 - name: Sophia Yang
   website: https://sophiay06.github.io/
   image: /assets/people/sophia.png
-  role: Undergraduate student
+  role: Undergraduate Student
   email: cyang68@u.rochester.edu
+
+- name: Helena Qing Huang
+  website: https://helenaqingh.github.io/
+  image: /assets/people/helena.png
+  role: Visiting Student
+  email: qhuang239@wisc.edu
 
 - name: Shuchang Xu
   website: https://shuchangxu.github.io/
